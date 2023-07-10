@@ -9,45 +9,59 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/5b12ffad4b.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 	<div>
 		<!-- header -->
 		<header>
-			<div>
-				ERGİNEER BAR VE MANGAL
+			<div class="ust_menu">
+				<a href="index.html">
+					<h1 class="headings">ERGİNEER BAR VE MANGAL</h1>
+				</a>
 
 				<!-- nav -->
-				Menü
-				Rezervasyonlar
-				Özel Teklifler
-				İletişim
+				<nav>
+					<div>
+						<a href="menu.html">Menü</a>
+						<a href="rezervasyon.html">Rezervasyonlar</a>
+						<a href="özelteklif.html">Özel Teklifler</a>
+						<a href="iletişim.html">İletişim</a>
+					</div>
+
+					<div class="social_i">
+						<i class="fa-brands fa-square-facebook fa-5x"></i>
+						<i class="fa-brands fa-twitter fa-5x"></i>
+						<i class="fa-brands fa-square-twitter fa-5x"></i>
+					</div>
+				</nav>
 			</div>
 		</header>
 
 		<!-- gallery section -->
 		<section class="gallery">
-			<div>
-				<h2>YEMEKLERİMİZ</h2>
+			<div class="container-food_img">
+				<h2 class="headings">YEMEKLERİMİZ</h2>
 
-				img/food-avocadotoast.jpg
+				<img src="img/food-avocadotoast.jpg" alt="tost">
 
-				img/food-burger.jpg
+				<img src="img/food-burger.jpg" alt="burger">
 
-				img/food-poutine.jpg
+				<img src="img/food-poutine.jpg" alt="poutine">
 
-				img/food-ribs.jpg
+				<img src="img/food-ribs.jpg" alt="ribs">
 
-				img/food-sandwich.jpg
+				<img src="img/food-sandwich.jpg" alt="sandwich">
 
-				img/food-sausage.jpg
+				<img src="img/food-sausage.jpg" alt="sausage">
 
-				img/food-steak.jpg
+				<img src="img/food-steak.jpg" alt="steak">
 
-				img/food-tacos.jpg
+				<img src="img/food-tacos.jpg" alt="tacos">
 
-				img/food-wings.jpg
+				<img src="img/food-wings.jpg" alt="wings">
 			</div>
 		</section>
 
@@ -57,10 +71,7 @@
 		<!-- about section -->
 		<section class="about">
 			<div class="about-container">
-				<h2>HAKKIMIZDA</h2>
-
-				<div id="cooks" class="pic">
-				</div>
+				<h2 class="headings">HAKKIMIZDA</h2>
 
 				<div class="text">
 					<h3>Güzel Yemekler, Güzel İnsanlar</h3>
@@ -77,64 +88,82 @@
 				</div>
 			</div>
 		</section>
+	</div>
+	<!-- spacer -->
+	<div class="spacer"></div>
 
-		<!-- spacer -->
-		<div class="spacer"></div>
+	<!-- contact section -->
+	<section class="contact">
+		<div class="contact-container">
+			<h2 class="headings">BİZE ULAŞIN</h2>
 
-		<!-- contact section -->
-		<section class="contact">
-			<div class="contact-container">
-				<h2>BİZE ULAŞIN</h2>
+			<div class="info" style="flex-flow: initial;">
+				<div class="address">
+					<h3 class="headings">Adres</h3>
 
-				<div class="info">
-					<div class="address">
-						<h3>Adres</h3>
+					<address>
+						<p>100. sokak</p>
+						<p>Oran, Ankara</p>
+					</address>
+				</div>
 
-						<address>
-							<p>100. sokak</p>
-							<p>Oran, Ankara</p>
-						</address>
+				<div class="hours">
+					<h3 class="headings">Saatler</h3>
+
+					<div>
+						<p>Pazartesiden Cumaya:</p>
+						<p>10:00 - 22:00</p>
+						<p>Friday and Saturday:</p>
+						<p>10:00 - 02:00</p>
 					</div>
+				</div>
 
-					<div class="hours">
-						<h3>Saatler</h3>
+				<div class="contacts">
+					<h3 class="headings">İletişim</h3>
 
-						<div>
-							<p>Pazartesiden Cumaya:</p>
-							<p>10:00 - 22:00</p>
-							<p>Friday and Saturday:</p>
-							<p>10:00 - 02:00</p>
-						</div>
-					</div>
-
-					<div class="contacts">
-						<h3>İletişim</h3>
-
-						<div>
-							<a id="phone" href="tel:999-999-9999">999-999-9999</a>
-							<a id="email" href="mailto:restoran@boomer.com">restoran@ergineer.com</a>
-						</div>
+					<div class="information">
+						<a id="phone" href="tel:999-999-9999">999-999-9999</a>
+						<a id="email" href="mailto:restoran@boomer.com">restoran@ergineer.com</a>
 					</div>
 				</div>
 			</div>
+		</div>
+	</section>
+
+	<!-- spacer -->
+	<div class="spacer-sm"></div>
+
+	<!-- footer -->
+	<footer>
+		<section class="footer_zero" style="flex-direction: column">
+			<div class="footer_one">
+				<div class="footer_two">
+					<h2 class="headings">Mail listemize katılın!</h2>
+					<!-- email signup -->
+					<div class="formbox">
+						<form action="" class="form">
+							<input type="email" name="email" class="input" placeholder="E-posta Adresi" />
+							<button type="button">Üye Ol</button>
+						</form>
+					</div>
+				</div>
+
+				<!-- nav -->
+				<nav class="navbar">
+					<a href="menu.html">Menü</a>
+					<a href="rezarvasyon.html">Rezervasyonlar</a>
+					<a href="özelteklif.html">Özel Teklifler</a>
+					<a href="contact.html">Contact</a>
+				</nav>
+			</div>
+			<!-- copyright -->
+			<div id="zero">
+				<p>©2022 ERGİNEER Restoran Zinciri, Tüm hakları saklıdır.</p>
+			</div>
+
 		</section>
 
-		<!-- spacer -->
-		<div class="spacer-sm"></div>
-
-		<!-- footer -->
-		<footer>
-			<!-- email signup -->
-			Mail listemize katılın!
-			Üye Ol
-			<!-- nav -->
-			Menü
-			Rezervasyonlar
-			Özel Teklifler
-			İletişim
-			<!-- copyright -->
-			©2022 ERGİNEER Restoran Zinciri, Tüm hakları saklıdır.
-		</footer>
+	</footer>
 	</div>
 </body>
 
